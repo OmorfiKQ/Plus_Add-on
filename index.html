@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="src/design.css" />
+    <title>Plus Add-on</title>
+</head>
+<body>
+     <h1>HTML Input Types</h1>
+
+    <h3>Challenge 1</h3>
+    <p>
+      Create a search input with a label "What's on your mind?"
+    </p>
+<form action="">
+    <label for="mind">What's on your mind?</label>
+    <input type="text" id="mind" name="mind" placeholder="" />
+</form>
+
+
+    <h3>Challenge 2</h3>
+    <p>
+      Create a form with a date input asking "What is your birth date?", a
+      submit button "Submit" and the form should send the date to /submit
+    </p>
+
+    <form action="/submit" method="POST">
+        <label for="birthdate">What is your birth date?</label>
+        <input type="date" id="birthdate" name="birthdate" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <h3>Challenge 3</h3>
+    <p>
+      Create radio inputs asking "What is your favorite primary color?" with
+      blue, yellow and red as options
+    </p>
+
+    <form>
+        <label for="favorite-color">What is your favorite primary color?</label><br />
+        <input type="radio" id="blue" name="color" value="blue" />
+        <label for="blue">Blue</label><br />
+        <input type="radio" id="yellow" name="color" value="yellow" />
+        <label for="yellow">Yellow</label><br />
+        <input type="radio" id="red" name="color" value="red" />
+        <label for="red">Red</label><br />
+    </form>
+
+    <h3>Challenge 4</h3>
+    <p>
+      Create checkbox inputs asking "How do you like to travel?" with plane,
+      bus, train, car, walking as options
+    </p>
+
+    <form>
+        <label for="travel-method">How do you like to travel?</label><br />
+        <input type="checkbox" id="plane" name="travel" value="plane" />
+        <label for="plane">Plane</label><br />
+        <input type="checkbox" id="bus" name="travel" value="bus" />
+        <label for="bus">Bus</label><br />
+        <input type="checkbox" id="train" name="travel" value="train" />
+        <label for="train">Train</label><br />
+        <input type="checkbox" id="car" name="travel" value="car" />
+        <label for="car">Car</label><br />
+        <input type="checkbox" id="walking" name="travel" value="walking" />
+        <label for="walking">Walking</label><br />
+    </form>
+       
+    <footer>
+        This AI project was coded by 
+        <a href="https://github.com/OmorfiKQ" target="_blank">JaSherai Benefield</a>
+        and is
+        <a href="https://github.com/OmorfiKQ/Plus_Add-on" target="_blank">open-sourced on Github</a> 
+        and is
+        <a href="https://heartfelt-semifreddo-4f2eda.netlify.app/" target="_blank">hosted on Netlify.</a>
+    </footer>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>
