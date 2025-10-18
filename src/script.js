@@ -1,4 +1,19 @@
 
+//Lesson5: Using a JS Library (Moment.js)
+      let todayElement = document.querySelector("#current-date");
+      let today = moment().format("dddd, MMMM D, YYYY");
+      todayElement.innerHTML = `Today is ${today}`;
+
+      let futureElement = document.querySelector("#future-date");
+      let future = moment()
+        .add(10, "years")
+        .format("dddd MMMM D, YYYY, h:mm:ss A");
+      futureElement.innerHTML = `10 years from now, it will be ${future}`;
+    
+
+
+
+
 //Lesson4: JS Timing events
 
 function showTime() {
