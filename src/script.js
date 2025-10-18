@@ -6,11 +6,12 @@ function showTime() {
 let currentDateELement = document.querySelector("#date");
 
 currentDateELement.innerHTML = new Date();
+
+setTimeout(showTime, 1000);
     
 } 
 
-setTimeout(showTime, 5000);
-setInterval(showTime, 1000);
+setInterval(showTime, 5000);
 
 
 function displayMilliSeconds() {
