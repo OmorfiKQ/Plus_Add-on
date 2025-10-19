@@ -1,4 +1,42 @@
 
+//Homework Plus Add-on JavaScript File
+
+function locationSelected(event) {
+    let parisElement = moment().tz(`Europe/Paris`).format("dddd MMMM D, YYYY, h:mm A");
+parisAlert = `It is ${parisElement} in Europe/Paris`;
+
+
+let tokyoElement = moment().tz(`Asia/Tokyo`).format("dddd MMMM D, YYYY, h:mm A");
+tokyoAlert = `It is ${tokyoElement} in Asia/Tokyo`;
+
+
+let sydneyElement = moment().tz(`Australia/Sydney`).format("dddd MMMM D, YYYY, h:mm A");
+sydneyAlert = `It is ${sydneyElement} in Australia/Sydney`;{
+    if (event.target.value.length > 0){        
+        if (event.target.value === "paris") {
+            
+            
+          alert(parisAlert);
+        }
+
+        if (event.target.value === "tokyo") {
+          alert(tokyoAlert);
+        }
+            
+        if (event.target.value === "sydney") {
+          alert(sydneyAlert);
+        }
+    }  
+}
+}
+
+
+
+
+let locationSelect = document.querySelector("#locations");
+locationSelect.addEventListener('change', locationSelected);
+
+
 //Lesson6: Working with Dates and Times (JS Time Zones)
 
     
