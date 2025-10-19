@@ -1,18 +1,41 @@
 
-//Lesson5: Using a JS Library (Moment.js)
-      let todayElement = document.querySelector("#current-date");
-      let today = moment().format("dddd, MMMM D, YYYY");
-      todayElement.innerHTML = `Today is ${today}`;
+//Lesson6: Working with Dates and Times (JS Time Zones)
 
-      let futureElement = document.querySelector("#future-date");
-      let future = moment()
-        .add(10, "years")
-        .format("dddd MMMM D, YYYY, h:mm:ss A");
-      futureElement.innerHTML = `10 years from now, it will be ${future}`;
     
+let hawaiiTime = moment().tz("US/Hawaii").format("dddd, MMMM D, YYYY, h:mm A");  
+let hawaiiElement = document.querySelector("#hawaii-current-date");
+hawaiiElement.innerHTML = `It is ${hawaiiTime} in Honolulu, Hawaii`;    
 
 
 
+let parisFuture = moment()
+  .tz(`Europe/Paris`)
+  .add(10, `year`)
+  .format("dddd MMMM D, YYYY, h:mm:ss A");
+
+let parisFutureElement = document.querySelector("#paris-future-date");
+parisFutureElement.innerHTML = `10 years from now, it will be ${parisFuture} in Paris, France`;
+
+
+
+let localTimezone = moment.tz.guess();
+let localTimezoneElement = document.querySelector("#local-time-zone");
+localTimezoneElement.innerHTML = `Your time zone is ${localTimezone}`;
+
+
+
+//Lesson5: Using a JS Library (Moment.js)
+
+let todayElement = document.querySelector("#current-date");
+let today = moment().format("dddd, MMMM D, YYYY");
+todayElement.innerHTML = `Today is ${today}`;
+
+let futureElement = document.querySelector("#future-date");
+let future = moment()
+    .add(10, `years`)
+    .format(`dddd MMMM D, YYYY, h:mm:ss A`);
+futureElement.innerHTML = `10 years from now, it will be ${future}`;
+    
 
 //Lesson4: JS Timing events
 
